@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F8673F13-008E-43CE-9476-9D6C3BBE4EB7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FinalAAY</RootNamespace>
+    <AssemblyName>FinalAAY</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bar.Designer.cs">
+      <DependentUpon>Bar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BarEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarEmployee.Designer.cs">
+      <DependentUpon>BarEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BarInteraction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarInteraction.Designer.cs">
+      <DependentUpon>BarInteraction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BarInteractionEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarInteractionEmployee.Designer.cs">
+      <DependentUpon>BarInteractionEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BarTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarTable.Designer.cs">
+      <DependentUpon>BarTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseSide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseSide.Designer.cs">
+      <DependentUpon>ChooseSide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CleanerControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CleanerControl.Designer.cs">
+      <DependentUpon>CleanerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cleaning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cleaning.Designer.cs">
+      <DependentUpon>Cleaning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmAsVisitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmAsVisitor.Designer.cs">
+      <DependentUpon>ConfirmAsVisitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Confirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Confirmation.Designer.cs">
+      <DependentUpon>Confirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Credentials.cs" />
+    <Compile Include="Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ElectricCleaner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ElectricCleaner.Designer.cs">
+      <DependentUpon>ElectricCleaner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="help.Designer.cs">
+      <DependentUpon>help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManualCleaner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManualCleaner.Designer.cs">
+      <DependentUpon>ManualCleaner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuView.Designer.cs">
+      <DependentUpon>MenuView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MovieNight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovieNight.Designer.cs">
+      <DependentUpon>MovieNight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="signUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signUp.Designer.cs">
+      <DependentUpon>signUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableEmployee.Designer.cs">
+      <DependentUpon>TableEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TicketSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TicketSupplier.Designer.cs">
+      <DependentUpon>TicketSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="webInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="webInterface.Designer.cs">
+      <DependentUpon>webInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebPortal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebPortal.Designer.cs">
+      <DependentUpon>WebPortal.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Bar.resx">
+      <DependentUpon>Bar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarEmployee.resx">
+      <DependentUpon>BarEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarInteraction.resx">
+      <DependentUpon>BarInteraction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarInteractionEmployee.resx">
+      <DependentUpon>BarInteractionEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarTable.resx">
+      <DependentUpon>BarTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChooseSide.resx">
+      <DependentUpon>ChooseSide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CleanerControl.resx">
+      <DependentUpon>CleanerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cleaning.resx">
+      <DependentUpon>Cleaning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmAsVisitor.resx">
+      <DependentUpon>ConfirmAsVisitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirmation.resx">
+      <DependentUpon>Confirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElectricCleaner.resx">
+      <DependentUpon>ElectricCleaner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="help.resx">
+      <DependentUpon>help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManualCleaner.resx">
+      <DependentUpon>ManualCleaner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuView.resx">
+      <DependentUpon>MenuView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovieNight.resx">
+      <DependentUpon>MovieNight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="signUp.resx">
+      <DependentUpon>signUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TableEmployee.resx">
+      <DependentUpon>TableEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicketSupplier.resx">
+      <DependentUpon>TicketSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="webInterface.resx">
+      <DependentUpon>webInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebPortal.resx">
+      <DependentUpon>WebPortal.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
